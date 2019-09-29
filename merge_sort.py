@@ -1,8 +1,9 @@
 #  The aim of this code is to sort the elements of an array in a more 
 # efficient way that is not the bubble sort, rather, the merge sort.
 
-data = [12, 50, 18, 21, 65, 31, 70, 14, 94, 67]
+data = [12, 50, 18, 21, 65, 31, 70, 14, 94, 67] # the data to be sorterd
 
+#define merge sort
 def merge_Sort(dataclass):
     if len(dataclass) > 1:
         mid = len(dataclass) // 2
@@ -18,7 +19,7 @@ def merge_Sort(dataclass):
         j = 0 #index for the right array
         k = 0 #index for the merged array
 
-        # while each array has content
+        # while each array has content, do this
         while i < len(left_array) and j < len(right_array):
             if left_array[i] < right_array[j]:
                 dataclass[k] = left_array[i]
@@ -38,6 +39,8 @@ def merge_Sort(dataclass):
             j += 1
             k += 1
 
+
+#function call
 print(data)
 merge_Sort(data)
 print(data)
