@@ -2,9 +2,15 @@
 # efficient way that is not the bubble sort, rather, the merge sort.
      #has O(n) complexity
 
+<<<<<<< HEAD
 data = [12, 50, 18, 21, 65, 31, 70, 14, 94, 67] # data to be sorted
 
 # define merge sort algorithm
+=======
+data = [12, 50, 18, 21, 65, 31, 70, 14, 94, 67] # the data to be sorterd
+
+#define merge sort
+>>>>>>> 6c67d514601591dd1e5ec09ffff4c0bfb06aecf6
 def merge_Sort(dataclass):
     if len(dataclass) > 1:
         mid = len(dataclass) // 2
@@ -40,7 +46,15 @@ def merge_Sort(dataclass):
             j += 1
             k += 1
 
+<<<<<<< HEAD
 #function call
 print(data)
 merge_Sort(data)
 print(data)
+=======
+
+#function call
+print(data)
+merge_Sort(data)
+print(data)
+>>>>>>> 6c67d514601591dd1e5ec09ffff4c0bfb06aecf6
