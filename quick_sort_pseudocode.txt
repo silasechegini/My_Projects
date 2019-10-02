@@ -1,0 +1,26 @@
+pseudocode for quick sort :
+
+1. select the pivot node. for simplicity, select the first node
+
+2. select the head and the tail indicies
+
+3. while head_index <  tail_index and head_index->value < pivot node value
+	3a. move the index forward
+4. while tail_index >  head_index and tail_index->value > pivot node value
+	4b. move the index backward
+
+5. if above conditions = false and head_index < tail_index
+	5a. swap the tail and head index values.
+	5b. repeat 3 and 4
+   else:
+	stop
+	swap the tail_index->value and the anchor node->value
+	return the tail index value
+
+6. the returned tail index determines the splitting point of the array
+	6a. array1 = begining of array to tail_index -1
+	6b. array2 = tail_index + 1 to end of array
+	6c. recursively call step 1 to 5 on each array till the array is sorted.
+
+
+	
